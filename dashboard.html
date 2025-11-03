@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body class="flex gap-1">
+    <div
+      id="sidebar"
+      class="fixed inset-y-0 left-0 w-64 bg-gray-800 -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
+    >
+      <div class="theme text-2xl font-bold text-white p-4 mb-8 text-center">
+        Dashboard
+      </div>
+      <div class="content flex flex-col gap-2 px-4 text-white">
+        <span
+          class="bg-blue-700 px-4 py-2.5 rounded-lg flex space-x-4 items-center"
+          ><img src="./assets/img/homeIcon.png" alt="" /><a
+            href="#"
+            class="active"
+            >Home</a
+          ></span
+        >
+        <span
+          class="hover:bg-gray-600 px-4 py-2.5 rounded-lg flex space-x-4 items-center"
+          ><img src="./assets/img/analyticIcon.png" alt="" class="w-6 h-6" /><a
+            href="#"
+            >Analytics</a
+          ></span
+        >
+        <span
+          class="hover:bg-gray-600 px-4 py-2.5 rounded-lg flex space-x-4 items-center"
+          ><img src="./assets/img/usersIcon.png" alt="" class="w-6 h-6" /><a
+            >Users</a
+          ></span
+        >
+        <span
+          class="hover:bg-gray-600 px-4 py-2.5 rounded-lg flex space-x-4 items-center"
+          ><img src="./assets/img/settingsIcon.png" alt="" class="w-6 h-6" /><a
+            href="#"
+            >Settings</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <div class="rightside right-0 flex-1 min-h-screen ml-0 md:ml-64 bg-gray-200">
+      <div
+        class="navtop flex justify-between items-right px-6 py-4 bg-white shadow-md h-16"
+      >
+        <h1 class="text-2xl font-bold text-black">Overview</h1>
+        <div class="flex gap-3 right-0">
+          <div class="icon"><img src="./assets/img/bellIcon.png" alt="" /></div>
+          <div class="profile bg-blue-500 rounded-2xl w-8 h-8"></div>
+        </div>
+      </div>
+
+      <div class="dashCards flex justify-between mx-6 my-6 md:flex-row flex-wrap">
+
+        <div class="card1 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
+          <div class="text mr-6">
+            <p class="text-gray-400">Total Users</p>
+            <h1 class="text-3xl font-bold">2,543</h1>
+            <p class="text-green-500">↑ 12% from last month</p>
+          </div>
+          <div class="imgIcon flex justify-center">
+          <img src="./assets/img/userBlue.png" alt="" class="bg-blue-200 rounded-4xl w-15 h-15" />
+        </div>
+        </div>
+
+        <div class="card2 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
+               <div class="text mr-6">
+            <p class="text-gray-400">Revenue</p>
+            <h1 class="text-3xl font-bold">$45,632</h1>
+            <p class="text-green-500">↑ 8% from last month</p>
+          </div>
+          <div class="imgIcon flex justify-center">
+          <img src="./assets/img/revenu.png" alt="" class="bg-green-200 rounded-4xl w-15 h-15" />
+        </div>
+        </div>
+            
+        <div class="card3 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
+               <div class="text mr-6">
+            <p class="text-gray-400">Orders</p>
+            <h1 class="text-3xl font-bold">1,423</h1>
+            <p class="text-red-500">↓ 3% from last month</p>
+          </div>
+          <div class="imgIcon flex justify-center">
+          <img src="./assets/img/orders.png" alt="" class="bg-purple-200 rounded-4xl w-15 h-15" />
+        </div>
+        </div>
+
+        <div class="card4 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
+               <div class="text mr-6">
+            <p class="text-gray-400">Growth</p>
+            <h1 class="text-3xl font-bold">23.5%</h1>
+            <p class="text-green-500">↑ 5% from last month</p>
+          </div>
+          <div class="imgIcon flex justify-center">
+          <img src="./assets/img/growth.png" alt="" class="bg-orange-200 rounded-4xl w-15 h-15" />
+        </div>
+        </div>
+
+      
+    </div>
+  </body>
+</html>
