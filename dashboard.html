@@ -46,64 +46,150 @@
       </div>
     </div>
 
-    <div class="rightside right-0 flex-1 min-h-screen ml-0 md:ml-64 bg-gray-200">
+    <div class="rightside flex-1 min-h-screen ml-0 md:ml-64 bg-gray-200">
+      <!-- Navigation Top -->
       <div
-        class="navtop flex justify-between items-right px-6 py-4 bg-white shadow-md h-16"
+        class="navtop flex justify-between items-center px-4 md:px-6 py-4 bg-white shadow-md h-16"
       >
-        <h1 class="text-2xl font-bold text-black">Overview</h1>
-        <div class="flex gap-3 right-0">
-          <div class="icon"><img src="./assets/img/bellIcon.png" alt="" /></div>
-          <div class="profile bg-blue-500 rounded-2xl w-8 h-8"></div>
+        <h1 class="text-xl md:text-2xl font-bold text-black">Overview</h1>
+        <div class="flex gap-3 items-center">
+          <div class="icon w-6 h-6 md:w-8 md:h-8">
+            <img
+              src="./assets/img/bellIcon.png"
+              alt="Notifications"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div
+            class="profile bg-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+          ></div>
         </div>
       </div>
 
-      <div class="dashCards flex justify-between mx-6 my-6 md:flex-row flex-wrap">
-
-        <div class="card1 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
-          <div class="text mr-6">
-            <p class="text-gray-400">Total Users</p>
-            <h1 class="text-3xl font-bold">2,543</h1>
-            <p class="text-green-500">↑ 12% from last month</p>
+      <!-- Dashboard Cards - FIXED ICONS -->
+      <div
+        class="dashCards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 max-[1213px]:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mx-3 sm:mx-4 md:mx-6 my-4 sm:my-6"
+      >
+        <!-- Card 1 -->
+        <div
+          class="card bg-white shadow-md px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-6 rounded-lg hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
+            <div class="text flex-1 min-w-0">
+              <p class="text-xs sm:text-sm text-gray-400 mb-1">Total Users</p>
+              <h1
+                class="text-xl sm:text-2xl md:text-3xl font-bold mb-1 truncate"
+              >
+                2,543
+              </h1>
+              <p class="text-xs sm:text-sm text-green-500 truncate">
+                ↑ 12% from last month
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="bg-blue-200 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/img/userBlue.png"
+                  alt=""
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
+                />
+              </div>
+            </div>
           </div>
-          <div class="imgIcon flex justify-center">
-          <img src="./assets/img/userBlue.png" alt="" class="bg-blue-200 rounded-4xl w-15 h-15" />
-        </div>
-        </div>
-
-        <div class="card2 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
-               <div class="text mr-6">
-            <p class="text-gray-400">Revenue</p>
-            <h1 class="text-3xl font-bold">$45,632</h1>
-            <p class="text-green-500">↑ 8% from last month</p>
-          </div>
-          <div class="imgIcon flex justify-center">
-          <img src="./assets/img/revenu.png" alt="" class="bg-green-200 rounded-4xl w-15 h-15" />
-        </div>
-        </div>
-            
-        <div class="card3 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
-               <div class="text mr-6">
-            <p class="text-gray-400">Orders</p>
-            <h1 class="text-3xl font-bold">1,423</h1>
-            <p class="text-red-500">↓ 3% from last month</p>
-          </div>
-          <div class="imgIcon flex justify-center">
-          <img src="./assets/img/orders.png" alt="" class="bg-purple-200 rounded-4xl w-15 h-15" />
-        </div>
-        </div>
-
-        <div class="card4 flex bg-white shadow-md px-4 py-4 rounded-md h-35 items-center">
-               <div class="text mr-6">
-            <p class="text-gray-400">Growth</p>
-            <h1 class="text-3xl font-bold">23.5%</h1>
-            <p class="text-green-500">↑ 5% from last month</p>
-          </div>
-          <div class="imgIcon flex justify-center">
-          <img src="./assets/img/growth.png" alt="" class="bg-orange-200 rounded-4xl w-15 h-15" />
-        </div>
         </div>
 
-      
+        <!-- Card 2 -->
+        <div
+          class="card bg-white shadow-md px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-6 rounded-lg hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
+            <div class="text flex-1 min-w-0">
+              <p class="text-xs sm:text-sm text-gray-400 mb-1">Revenue</p>
+              <h1
+                class="text-xl sm:text-2xl md:text-3xl font-bold mb-1 truncate"
+              >
+                $45,632
+              </h1>
+              <p class="text-xs sm:text-sm text-green-500 truncate">
+                ↑ 8% from last month
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="bg-green-200 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/img/revenu.png"
+                  alt=""
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card bg-white shadow-md px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-6 rounded-lg hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
+            <div class="text flex-1 min-w-0">
+              <p class="text-xs sm:text-sm text-gray-400 mb-1">Orders</p>
+              <h1
+                class="text-xl sm:text-2xl md:text-3xl font-bold mb-1 truncate"
+              >
+                1,423
+              </h1>
+              <p class="text-xs sm:text-sm text-red-500 truncate">
+                ↓ 3% from last month
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="bg-purple-200 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/img/orders.png"
+                  alt=""
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="card bg-white shadow-md px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-6 rounded-lg hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
+            <div class="text flex-1 min-w-0">
+              <p class="text-xs sm:text-sm text-gray-400 mb-1">Growth</p>
+              <h1
+                class="text-xl sm:text-2xl md:text-3xl font-bold mb-1 truncate"
+              >
+                23.5%
+              </h1>
+              <p class="text-xs sm:text-sm text-green-500 truncate">
+                ↑ 5% from last month
+              </p>
+            </div>
+            <div class="shrink-0">
+              <div
+                class="bg-orange-200 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/img/growth.png"
+                  alt=""
+                  class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
